@@ -1,0 +1,1 @@
+const ircClient = require('./irc')
