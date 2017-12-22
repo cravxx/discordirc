@@ -31,7 +31,13 @@ let discordClient = {
   reportMessage(from,to,message){
     bot.sendMessage({
       to: to,
-      message:`**<${from}>**: ${message}`
+      message:`**(${from})** ${message}`
+    });
+  },
+  reportAction(from,to,text,message){
+    bot.sendMessage({
+      to: to,
+      message:`*${from} ${text}*`
     });
   },
   channelList
