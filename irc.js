@@ -67,7 +67,7 @@ client.addListener('error', function(message) {
 });
 
 discordClient.bot.on('any', function(event) {
-  if(event.t == 'MESSAGE_CREATE' && event.d.channel_id === discordClient.channelID && event.d.author.id !== discordClient.bot.id) {
+  if(event.t == 'MESSAGE_CREATE' && event.d.channel_id === discordClient.channelID && event.d.author.id !== discordClient.bot.id && event.d.author.id !== settings.discordWebhookID) {
     let user = event.d.author.username
     let message = event.d.content
     if(event.d.attachments.length != 0) {
