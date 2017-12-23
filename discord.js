@@ -31,7 +31,7 @@ let discordClient = {
   bot,
   reportMessage(from,to,message){
     request.post(
-        settings.discordWebhook,
+        "https://discordapp.com/api/webhooks/"+settings.discordWebhookID+"/"+settings.discordWebhookToken,
         { json: { 
                 content: message,
                 username: from,
