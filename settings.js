@@ -1,10 +1,12 @@
 let settings = {
-  nick: 'hsgDiscord',
+  nick: '<nick>',
   token: '<bot token here>',
-  server: 'irc.rizon.net',
-  ircChannel: '#/g/ftp',
-  discordChannel: 'g_ftp-bridge',
-  discordWebhookID: '393708094502207490',
+  server: '<irc server>',
+  password: '<irc password>',
+  ircChannel: '<irc channel>',
+  ircPort: '<irc port>',
+  discordChannel: '<discord channel id>',
+  discordWebhookID: '<webhook id>',
   discordWebhookToken: '<hook token here>'
 };
 module.exports = settings;
